@@ -1,0 +1,10 @@
+{
+  "name": "expo-dva-scaffold",
+  "version": "0.0.1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "postinstall": "sh ./src/init.sh"
+  },
+  "license": "UNLICENSED"
+}

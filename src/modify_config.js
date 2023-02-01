@@ -1,0 +1,11 @@
+import {ReadJsonFile,WriteJsonFile} from './libs/json.js';
+const packageJson = ReadJsonFile('../../package.json');
+packageJson.scripts["eas-build-pre-install"]="npm config set legacy-peer-deps true";
+WriteJsonFile('../../package.json',packageJson);
+const appJson = ReadJsonFile('../../app.json');
+appJson.expo.icon="./src/assets/icon.png";
+appJson.expo.splash.image="./src/assets/splash.png";
+appJson.expo.android.adaptiveIcon.foregroundImage="./src/assets/adaptive-icon.png";
+appJson.expo.web.favicon="./src/assets/favicon.png";
+appJson.expo.userInterfaceStyle= "automatic";
+WriteJsonFile('../../app.json',appJson);
