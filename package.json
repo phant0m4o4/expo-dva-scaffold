@@ -4,9 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "postinstall": "node ./src/postinstall.js",
-    "install": "echo '==install' > ~/code/test/2",
-    "preinstall": "echo '==preinstall'> ~/code/test/3"
+    "postinstall": "node ./src/postinstall.js"
   },
   "license": "UNLICENSED",
   "dependencies": {
