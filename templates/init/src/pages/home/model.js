@@ -1,9 +1,7 @@
-export default {
+import { CreateModel } from "../../libs/model_factory";
+export default CreateModel({
   namespace: "HomePageModel",
-  state: {
-    value: "It's value."
+  initState: {
+    value: "It's value.",
   },
-  reducers: {},
-  effects: {},
-  subscriptions: {},
-};
+});
