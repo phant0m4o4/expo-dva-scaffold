@@ -10,7 +10,7 @@ export const set = async (args) => {
 };
 export const remove = async (args) => {
   const { key } = args;
-  return await AsyncStorage.remove(key);
+  return await AsyncStorage.removeItem(key);
 };
 export const merge = async (args) => {
   const { key, value } = args;
